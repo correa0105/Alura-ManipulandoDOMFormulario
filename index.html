@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <script src="./assets/js/app.js" type="module" defer></script>
+
+    <title>Validacao Form</title>
+
+</head>
+
+<body>
+    <section>
+        <form action="">
+            <h1 id="title-form">VALIDADOR DE FORMULARIO JS - ALURA</h1>
+            <div class="form-group">
+                <h1 class="title-form-group">Informações Básicas</h1>
+                <div class="input-container">
+                    <input id="nome" class="input" type="text" data-tipo="nome" placeholder="Nome" required>
+                    <label for="nome">Nome</label>
+                    <span class="mensagem-erro-campo"></span>
+                </div>
+                <div class="input-container">
+                    <input id="email" class="input" type="email" data-tipo="email" placeholder="Email" required>
+                    <label for="email">Email</label>
+                    <span class="mensagem-erro-campo"></span>
+                </div>
+                <div class="input-container">
+                    <input id="senha" class="input" type="password" data-tipo="senha" placeholder="Senha" required title="A senha deve conter ao menos 8 caracteres, sendo ao menos uma letra maiuscula, uma letra minuscula, um numero e ao menos um caracter especial (!@#$%&*)" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%&*]).{8,16}$">
+                    <label for="senha">Senha</label>
+                    <span class="mensagem-erro-campo"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <h1 class="title-form-group">Informações Pessoais</h1>
+                <div class="input-container">
+                    <input id="nascimento" class="input" type="date" data-tipo="dataNascimento" required>
+                    <label for="nascimento">Data de Nacimento</label>
+                    <span class="mensagem-erro-campo"></span>
+                </div>
+                <div class="input-container">
+                    <input id="cpf" class="input" type="text" placeholder="CPF" data-tipo="cpf" required>
+                    <label for="cpf">CPF</label>
+                    <span class="mensagem-erro-campo"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <h1 class="title-form-group">Endereço</h1>
+                <div class="input-container">
+                    <input id="cep" class="input" type="text" placeholder="CEP" pattern="[\d]{5}-?[\d]{3}" data-tipo="cep" required>
+                    <label for="cep">CEP</label>
+                    <span class="mensagem-erro-campo"></span>
+                </div>
+                <div class="input-container">
+                    <input id="logradouro" class="input" type="text" placeholder="Logradouro" data-tipo="logradouro" required>
+                    <label for="logradouro">Logradouro</label>
+                    <span class="mensagem-erro-campo"></span>
+                </div>
+                <div class="input-container">
+                    <input id="cidade" class="input" type="text" placeholder="Cidade" data-tipo="cidade" required>
+                    <label for="cidade">Cidade</label>
+                    <span class="mensagem-erro-campo"></span>
+                </div>
+                <div class="input-container">
+                    <input id="estado" class="input" type="text" placeholder="Estado" data-tipo="estado" required>
+                    <label for="estado">Estado</label>
+                    <span class="mensagem-erro-campo"></span>
+                </div>
+            </div>
+            <button type="submit">ENVIAR</button>
+        </form>
+    </section>
+    <h1 id="h1-legend">ESTUDOS - LUCAS CORRÊA</h1>
+</body>
+
+</html>

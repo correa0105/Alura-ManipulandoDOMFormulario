@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #64d1d4;
+    background-size: cover;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 65rem;
+    background: #ffffff;
+    padding: 2.5rem 2rem 0 2rem;
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px #7e7e7e;
+}
+
+#title-form {
+    margin: 1.5rem 0;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    color: #222222;
+    font-size: 1.5rem;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    height: 7rem;
+    position: relative;
+}
+
+.title-form-group {
+    margin-bottom: .8rem;
+    font-size: 1.5rem;
+    color: #444444;
+}
+
+.input-container input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #c4c4c4;
+    color: #a8a8a8;
+    background: none;
+    padding: 2rem 0.5rem 0.5rem 0.5rem;
+    outline: none;
+    font-size: 1.5rem;
+}
+
+.input::placeholder {
+    visibility: hidden;
+    color: #00000000;
+}
+
+.input-container label {
+    position: absolute;
+    color: #a8a8a8;
+    font-size: 1.6rem;
+    top: 1.2rem;
+    left: 0.7rem;
+    transition: all 400ms;
+    font-size: 1.5rem;
+} 
+
+.input:not(:placeholder-shown) + label, .input:focus + label {
+    font-size: 1.2rem;
+    top: 0.2rem;
+}
+
+textarea {
+    height: auto;
+}
+
+button {
+    margin: 2.5rem 0 2.5rem 0;
+    padding: 1rem 0rem;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-weight: 600;
+    background: #17c3c9;
+    cursor: pointer;
+}
+
+#h1-legend {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    opacity: 0.2;
+}
+
+.input-container-invalido input{
+    border: 1px solid rgb(233, 104, 104);
+    border-radius: 3px;
+}
+
+.mensagem-erro-campo {
+    display: none;
+    margin-top: .2rem;
+    color: rgb(233, 104, 104);
+    font-size: 10px;
+}
+
+.input-container-invalido .mensagem-erro-campo {
+    display: block;
+}
